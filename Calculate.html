@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="div1">
+     <h1><strong><em>Simple Calculator</em></strong></h1>
+
+    <form onsubmit="calculate(); return false;">
+        <label for="num1">Calculation:</label>
+        <input type="number" id="num1" required>
+        <br> 
+        <label for="num2">Calculation:</label>
+        <input type="number" id="num2" required>
+
+        <label>Operator:</label>
+        
+        <select id="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+            <option value="^">^</option>
+            <option value="sqrt">sqrt</option>
+            <option value="!">!</option>
+        </select>
+        
+        <button type="submit">Calculate</button>
+    </form>
+    <p id="result"></p>
+</div>
+
+
+
+<script src="Calculate.js"></script>    
+</body>
+</html>
